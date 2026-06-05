@@ -29,7 +29,6 @@ Initial findings suggest a measurable effect of framing on player decisions, alt
 
 ## Future Improvements
 
-* Implement player rating system (e.g. ELO) to control for skill differences
 * Enhance AI adaptability for more nuanced gameplay
 * Expand dataset for stronger statistical inference
 * Integrate real-time data visualisation
