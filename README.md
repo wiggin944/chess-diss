@@ -1,39 +1,39 @@
-# chess-diss
-# Chess AI Behavioural Experiment
+# Behavioural Economics Dissertation: Risk Preference in Chess
 
-## Overview
+Research summary for my BSc Economics dissertation, which received **77% (First-class)**.
 
-This project was developed as part of my dissertation in behavioural economics, investigating how framing effects influence decision-making under risk. Using chess as a controlled environment, I built an experimental platform to analyse how players respond to different informational cues.
+## Research question
 
-## Key Features
+The project investigated whether framing effects persist in a more complex strategic environment than the simple laboratory choices commonly used in behavioural economics. Chess provided a useful middle ground: decisions are structured and measurable, but still require forward-looking judgement under uncertainty.
 
-* ♟️ Custom-built chess interface for controlled experiments
-* 🤖 AI opponent with fixed difficulty to ensure consistency across participants
-* 💾 SQL database integration to store player decisions and game states
-* 🧠 Experimental manipulation of framing (positive vs negative)
-* 📊 Data collection designed for statistical analysis of risk-taking behaviour
+## Approach
 
-## Tech Stack
+The dissertation combined:
 
-* Python
-* SQL (database design and data storage)
-* AI / game logic integration
+- an encrypted SQL database connected to Python data-collection scripts
+- experimental framing treatments
+- OLS regression with interaction terms
+- a recursive algorithm for simulating future chess positions
+- a risk measure based on the variance of centipawn evaluations across predicted future states
 
-## Research Purpose
-
-The platform was used to test whether framing affects risk aversion in strategic decision-making. By holding game difficulty constant and varying how choices were presented, the experiment isolates behavioural responses to framing.
+Rather than defining risk as a simple best-to-worst range, the recursive procedure represented risk as the dispersion of plausible future outcomes.
 
 ## Results
 
-Initial findings suggest a measurable effect of framing on player decisions, although statistical significance requires further analysis due to variability in player skill levels.
+The final regression specification achieved **R² = 0.221**. The analysis found that:
 
-## Future Improvements
+- negative framing was associated with greater risk-seeking among higher-skilled players
+- positive framing was associated with overconfidence-driven risk-seeking
+- both framing effects were moderated by player skill
 
-* Enhance AI adaptability for more nuanced gameplay
-* Expand dataset for stronger statistical inference
-* Integrate real-time data visualisation
+## Why it matters
+
+The project combined behavioural economics, econometrics, database design and algorithmic modelling in a single empirical study. It was an early example of the type of work I now focus on in data science: turning a behavioural question into a measurable data-generating process, engineering a usable dataset, and testing the resulting hypothesis statistically.
+
+## Repository note
+
+This is a lightweight public research summary. The full participant data, encrypted database and complete experimental/analysis pipeline are not published here.
 
 ## Author
 
 William Higgin
-
